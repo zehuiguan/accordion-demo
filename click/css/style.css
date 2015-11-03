@@ -1,0 +1,105 @@
+/*-- reset --*/
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/*-- reset End --*/
+
+.wrap {
+    margin: 50px auto;
+    width: 1200px;
+    height: 487px;
+    position: relative;
+    overflow: hidden;
+    box-shadow:0 0 10px 2px rgba(0,0,0,0.4); 
+}
+.pic {
+    width: 780px;
+    height: 487px;
+    background: #000;
+    cursor: pointer;    
+    position: absolute;
+    top: 0;
+    transition: left 0.3s ease-out;
+    -webkit-transition: left 0.3s ease-out;
+}
+.pic img {
+    opacity: 0.6;
+    transition: 0.3s ease-out 0.4s;
+    -webkit-transition: 0.3s ease-out 0.4s;    
+}
+
+#pic1  {
+    left: 0;   
+}
+#pic2 {
+    left: 105px;
+}
+#pic3 {
+    left: 210px;   
+}
+#pic4 {
+    left: 315px;   
+}
+#pic5 {
+    left: 420px;   
+}
+
+.pic a {
+    display: inline-block;
+}
+#pic1:target img {
+    opacity: 1;    
+}
+#pic2:target img {
+    opacity: 1;   
+}
+#pic3:target img {
+    opacity: 1;   
+}
+#pic4:target img {
+    opacity: 1;   
+}
+#pic5:target img {
+    opacity: 1;   
+}
+
+
+#pic1:target+ #pic2 {
+    left: 780px;
+}
+#pic1:target+ #pic2 + #pic3{
+    left: 885px;
+}
+#pic1:target+ #pic2 + #pic3 + #pic4{
+    left: 990px;
+}
+#pic1:target+ #pic2 + #pic3 + #pic4 +#pic5{
+    left: 1095px;
+}
+
+
+#pic2:target+ #pic3 {
+    left: 885px;
+}
+#pic2:target+ #pic3 + #pic4{
+    left: 990px;
+}
+#pic2:target+ #pic3 + #pic4 + #pic5{
+    left: 1095px;
+}
+
+#pic3:target + #pic4{
+    left: 990px;
+}
+#pic3:target + #pic4 + #pic5{
+    left: 1095px;
+}
+#pic4:target + #pic5{
+    left: 1095px;
+}

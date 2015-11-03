@@ -1,0 +1,121 @@
+/*-- reset --*/
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/*-- reset End --*/
+
+.wrap {
+    margin: 50px auto;
+    width: 1200px;
+    height: 487px;
+    position: relative;
+    overflow: hidden;
+    box-shadow:0 0 10px 2px rgba(0,0,0,0.4); 
+}
+.pic {
+    width: 780px;
+    height: 487px;
+    background: #000;
+    cursor: pointer;    
+    position: absolute;
+    top: 0;
+    transition: left 0.5s ease-out;
+    -webkit-transition: left 0.5s ease-out;
+}
+.pic img {
+    opacity: 0.5;
+    transition: 0.5s ease-out 0.5s;
+    -webkit-transition: 0.5s ease-out 0.5s;    
+}
+#pic5 img {
+    opacity: 1;
+}
+#pic1  {
+    left: 0;   
+}
+#pic2 {
+    left: 105px;
+}
+#pic3 {
+    left: 210px;   
+}
+#pic4 {
+    left: 315px;   
+}
+#pic5 {
+    left: 420px;   
+}
+
+.pic a {
+    display: inline-block;
+}
+#pic1:hover img {
+    opacity: 1;    
+}
+#pic2:hover img {
+    opacity: 1;   
+}
+#pic3:hover img {
+    opacity: 1;   
+}
+#pic4:hover img {
+    opacity: 1;   
+}
+#pic5:hover img {
+    opacity: 1;   
+}
+
+
+#pic1:hover+ #pic2 {
+    left: 780px;
+}
+#pic1:hover+ #pic2 + #pic3{
+    left: 885px;
+}
+#pic1:hover+ #pic2 + #pic3 + #pic4{
+    left: 990px;
+}
+#pic1:hover+ #pic2 + #pic3 + #pic4 +#pic5{
+    left: 1095px;
+}
+
+
+#pic2:hover+ #pic3 {
+    left: 885px;
+}
+#pic2:hover+ #pic3 + #pic4{
+    left: 990px;
+}
+#pic2:hover+ #pic3 + #pic4 + #pic5{
+    left: 1095px;
+}
+
+#pic3:hover + #pic4{
+    left: 990px;
+}
+#pic3:hover + #pic4 + #pic5{
+    left: 1095px; 
+}
+
+#pic4:hover + #pic5{
+    left: 1095px;
+}
+
+#pic1:hover+ #pic2 + #pic3 + #pic4 +#pic5 img{
+    opacity: 0.5;
+}
+#pic2:hover+ #pic3 + #pic4 + #pic5 img{
+    opacity: 0.5;
+}
+#pic3:hover + #pic4 + #pic5 img{
+    opacity: 0.5; 
+}
+#pic4:hover + #pic5 img{
+    opacity: 0.5;
+}
