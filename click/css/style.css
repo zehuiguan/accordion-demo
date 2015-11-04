@@ -34,6 +34,10 @@ ul {
     -webkit-transition: 0.3s ease-out 0.4s;    
 }
 
+#pic5 img {
+    opacity: 1;
+}
+
 #pic1  {
     left: 0;   
 }
@@ -102,4 +106,17 @@ ul {
 }
 #pic4:target + #pic5{
     left: 1095px;
+}
+
+#pic1:target+ #pic2 + #pic3 + #pic4 + #pic5 img{
+    opacity: 0.6;
+}
+#pic2:target+ #pic3 + #pic4 + #pic5 img{
+    opacity: 0.6;
+}
+#pic3:target + #pic4 + #pic5 img{
+    opacity: 0.6;
+}
+#pic4:target + #pic5 img{
+    opacity: 0.6;
 }
